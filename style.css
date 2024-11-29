@@ -144,7 +144,13 @@ img{
 }
 
 .search-list::-webkit-scrollbar-thumb{
-    background-color: yellow !important;
+    background-color: var(--yellow-color);
     outline: none;
     border-radius: 10px;
+}
+
+/* js related class */
+
+.hide-search-list {
+    display: none;
 }
