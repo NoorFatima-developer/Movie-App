@@ -55,3 +55,14 @@ img{
     color: #fff;
     font-weight: bold;
 }
+
+.logo p span {
+    color: var(--yellow-color);
+}
+
+.search-element {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
