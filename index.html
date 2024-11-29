@@ -1,30 +1,39 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/59af6d82c4.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/59af6d82c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- logo -->
-         <div class="logo">
-            <div class="container">
-                <p>Movie <span>Corn.</span> </p>
-            </div>
-         </div>
-        <!-- end of logo -->
+      <!-- logo -->
+      <div class="logo">
+        <div class="container">
+          <p>Movie <span>Corn.</span></p>
+        </div>
+      </div>
+      <!-- end of logo -->
 
-    <div class="search-container">
+      <div class="search-container">
         <div class="search-element">
-            <h3>Search Movie:</h3>
-            <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup = "findMovies()" onclick="findMovies()">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
 
-            <div class="search-list" id="search-list">
-                <!-- list here -->
-                 <!-- <div class="search-list-item">
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <!-- <div class="search-list-item">
                     <div class="search-thumb">
                         <img src="medium-cover.jpg" alt="">
                     </div>
@@ -33,18 +42,18 @@
                         <p>2017</p>
                     </div>
                  </div> -->
-            </div>
+          </div>
         </div>
-    </div>
-    <!-- end of search-container-->
+      </div>
+      <!-- end of search-container-->
 
-    <!-- result container -->
+      <!-- result container -->
 
-    <div class="container">
+      <div class="container">
         <div class="result-container">
-            <div class="result-grid" id="result-grid">
-                <!-- movie information here -->
-                 <!-- <div class="movie-poster">
+          <div class="result-grid" id="result-grid">
+            <!-- movie information here -->
+            <!-- <div class="movie-poster">
                     <img src="medium-cover.jpg" alt="movie poster">
                  </div>
                  <div class="movie-info">
@@ -63,13 +72,13 @@
                     <p class="language"><b>Language:</b>English</p>
                     <p class="awards"><b><i class="fa-solid fa-award"></i></b>Monimated for 1 Oscar</p>
                  </div> -->
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>  
     <!-- end of wrapper -->
 
     <!-- movie-app js -->
-     <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
