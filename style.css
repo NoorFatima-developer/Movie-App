@@ -185,5 +185,13 @@ img{
 }
 
 .movie-info .year {
-    font-size: 500;
+    font-weight: 500;
+}
+
+.movie-infov.rated{
+    background-color: var(--yellow-color);
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
 }
