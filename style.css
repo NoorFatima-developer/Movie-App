@@ -4,7 +4,7 @@
     --md-dark-color: #1d1d1d;
     --dark-color: #171717;
     --light-dark-color: #292929;
-    --yellow-color: rgb(235, 222, 35);
+    --yellow-color: #ffde21;
 }
 
 *{
@@ -153,4 +153,29 @@ img{
 
 .hide-search-list {
     display: none;
+}
+
+.result-container{
+    padding: 3rem 0;
+}
+
+.movie-poster img {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+.movie-info {
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+}
+
+.movie-title {
+    font-size: 2rem;
+    color: var(--yellow-color);
+}
+
+.movie-misc-info {
+    list-style-type: none;
 }
