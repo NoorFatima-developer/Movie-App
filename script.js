@@ -41,7 +41,6 @@ function displayMovieList(movies) {
     movieListItem.classList.add("search-list-item");
     if (movies[i].Poster !== "N/A") moviePoster = movies[i].Poster;
     else moviesPoster = "image-not-found.png";
-
     movieListItem.innerHTML = `
     <div class="search-thumb">
         <img src=${moviePoster} alt="">
@@ -101,10 +100,10 @@ function displayMovieDetails(details) {
 `;
 }
 
-window.addEventListener("click", function (event) {
-  if (event.target.classList !== "form-control") {
-    searchList.classList.add("hide-search-list");
-    // movieSearchBox.value = "";
-  }
-});
+// window.addEventListener("click", function (event) {
+//   if (event.target.classList !== "form-control") {
+//     searchList.classList.add("hide-search-list");
+//     // movieSearchBox.value = "";
+//   }
+// });
 // loadMovies("lord of the Rings")
