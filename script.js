@@ -51,7 +51,7 @@ function displayMovieList(movies){
                     <img src=${moviePoster} alt="">
                 </div>
                 <div class="search-item-info">
-                    <h3>Guardians of the Galaxy Vol. 2</h3>
+                    <h3>${movies[i].Title}</h3>
                     <p>2017</p>
                 </div>
                 `;
