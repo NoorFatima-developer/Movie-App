@@ -85,4 +85,18 @@ img{
     border-bottom-left-radius: 3px;
     outline: none;
     color: var(--light-dark-color);
+    width: 350px;
+}
+
+.search-list {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-width: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.search-list .search-list-item {
+    background-color: var(--light-dark-color);
 }
