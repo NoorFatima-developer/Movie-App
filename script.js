@@ -106,4 +106,4 @@ window.addEventListener("click", function (event) {
     // movieSearchBox.value = "";
   }
 });
-loadMovies("lord of the Rings")
+// loadMovies("lord of the Rings")
