@@ -117,6 +117,18 @@ img{
 
 }
 
-search-list-thumbnail img {
+.search-item-thumbnail img {
     width: 40px;
+    margin-right: 1rem;
+}
+
+.search-item-info h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+.search-item-info p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
