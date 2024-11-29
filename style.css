@@ -76,3 +76,12 @@ img{
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
+
+.search-element .form-control {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+}
