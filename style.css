@@ -188,10 +188,74 @@ img{
     font-weight: 500;
 }
 
-.movie-infov.rated{
+.movie-info .rated{
     background-color: var(--yellow-color);
     padding: 0.4rem;
     margin: 0 0.4rem;
     border-radius: 3px;
     font-weight: 600;
+}
+
+.movie-info .released {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .writer {
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.movie-info .genre {
+    background-color: var(--light-dark-color);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.movie-info .plot {
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+.movie-info .language {
+    color: var(--yellow-color);
+    font-style: italic;
+}
+
+.movie-info .awards {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.movie-info .awards i {
+    color: var(--yellow-color);
+    margin: 1rem 0.7rem 0 0;
+}
+
+@media(max-width:450px) {
+    .logo p {
+        font-size: 1.4rem;
+    }
+    .search-element .form-control{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+    .search-element h3{
+        font-size: 1.4rem;
+    }
+    .search-list{
+        width: 90%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .search-list .search-list-item{
+        width: 100%;
+    }
+
+    .movie-misc-info{
+        flex-direction: column;
+    }
 }
