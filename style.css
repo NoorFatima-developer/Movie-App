@@ -65,4 +65,11 @@ img{
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    position: relative;
+}
+
+.search-element h3 {
+    align-self: center;
+    margin-right: 1rem;
+    font-size: 2rem;
 }
