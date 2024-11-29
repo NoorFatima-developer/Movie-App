@@ -99,4 +99,24 @@ img{
 
 .search-list .search-list-item {
     background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+}
+
+.search-list .search-list-item:hover {
+    background-color: #1f1f1f;
+}
+
+.search-list-item {
+    display: flex;
+    align-items: center;
+
+}
+
+search-list-thumbnail img {
+    width: 40px;
 }
