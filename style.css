@@ -44,3 +44,8 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-dark-color);
+}
