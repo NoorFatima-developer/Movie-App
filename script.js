@@ -38,8 +38,23 @@ function displayMovieList(movies){
     searchList.innerHTML = "";
     for(let i=0; i<movies.length; i++){
         let movieListItem = document.createElement('div');
-        console.log(movieListItem);
+        // console.log(movieListItem);
         movieListItem.dataset.id = movies[i].imdbID;
+        movieListItem.classList.add('search-list-item');
+        if(movies[i].Poster !== "N/A")
+            moviePoster = movies[i].Poster;
+        else
+            moviesPoster = "image-not-found";
+
+            movieListItem.innerHTML = `
+                <div class="search-thumb">
+                    <img src=${moviePoster} alt="">
+                </div>
+                <div class="search-item-info">
+                    <h3>Guardians of the Galaxy Vol. 2</h3>
+                    <p>2017</p>
+                </div>
+                `;
     }
 }
 
