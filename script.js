@@ -42,20 +42,20 @@ function displayMovieList(movies){
         movieListItem.dataset.id = movies[i].imdbID;
         movieListItem.classList.add('search-list-item');
         if(movies[i].Poster !== "N/A")
-            moviePoster = movies[i].Poster;
+moviePoster = movies[i].Poster;
         else
-            moviesPoster = "image-not-found";
+moviesPoster = "image-not-found";
 
-            movieListItem.innerHTML = `
-                <div class="search-thumb">
-                    <img src=${moviePoster} alt="">
-                </div>
-                <div class="search-item-info">
-                    <h3>${movies[i].Title}</h3>
-                    <p>${movies[i].Year}</p>
-                </div>
-                `;
-                searchList.appendChild(movieListItem);
+movieListItem.innerHTML = `
+    <div class="search-thumb">
+        <img src=${moviePoster} alt="">
+    </div>
+    <div class="search-item-info">
+        <h3>${movies[i].Title}</h3>
+        <p>${movies[i].Year}</p>
+    </div>
+    `;
+    searchList.appendChild(movieListItem);
     }
     loadMovieDetails();
 }
@@ -64,14 +64,41 @@ function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list-item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
-            // console.log(movie.dataset.id); 
-            searchList.classList.add('hide-search-list');
-            movieSearchBox.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`)
+// console.log(movie.dataset.id); 
+searchList.classList.add('hide-search-list');
+movieSearchBox.value = "";
+const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`)
+const movieDetails = await result.json();
+// console.log(movieDetails);
+displayMovieDetails(movieDetails);
         });
         // console.log(movie);
         
     });
 }
 
+
+function displayMovieDetails(details){
+    resultGrid.innerHTML = `
+     <div class="movie-poster">
+        <img src = "${(details.Poster !== "N/A") ? details.Poster : "image-not-found.png"}" alt="movie poster">
+     </div>
+     <div class="movie-info">
+        <h3 class="movie-title">
+            ${details.Title}
+        </h3>
+        <ul class="movie-misc-info">
+            <li class="year">Year: ${details.Year}</li>
+            <li class="rated">Ratings: ${details.Rated}</li>
+            <li class="released">Released: ${details.Released}</li>
+        </ul>
+        <p class="genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class="writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class="actors"><b>Actors:</b>${details.Actors}</p>
+        <p class="plot"><b>Plot:</b> ${details.Plot} </p>
+        <p class="language"><b>Language:</b> ${details.Language}</p>
+        <p class="awards"><b><i class="fa-solid fa-award"></i></b>${details.Awards}</p>
+     </div>
+`
+}
 // loadMovies("lord of the Rings")
