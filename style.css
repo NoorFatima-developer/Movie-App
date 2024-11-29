@@ -258,4 +258,41 @@ img{
     .movie-misc-info{
         flex-direction: column;
     }
+
+    .movie-misc-info li:nth-child(2){
+        margin: 0.8rem 0;
+    }
+}
+
+@media(min-width: 800px){
+    .search-element{
+        flex-direction: row;
+    }
+   .search-element h3{
+    margin-bottom: 0;
+   }
+   
+   .result-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .movie-info{
+    text-align: left;
+    padding-top: 0;
+   }
+
+   .movie-info .movie-misc-info{
+    justify-content: flex-start;
+    padding-left: 0;
+   }
+
+   .movie-info .plot {
+    margin-left: 0;
+   }
+
+   .movie-info .writer {
+    padding-left: 0;
+    margin-left: 0;
+   }
 }
