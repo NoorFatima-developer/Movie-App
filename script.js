@@ -100,10 +100,10 @@ function displayMovieDetails(details) {
 `;
 }
 
-// window.addEventListener("click", function (event) {
-//   if (event.target.classList !== "form-control") {
-//     searchList.classList.add("hide-search-list");
-//     // movieSearchBox.value = "";
-//   }
-// });
-// loadMovies("lord of the Rings")
+window.addEventListener("click", function (event) {
+  if (event.target.classList !== "form-control") {
+    searchList.classList.add("hide-search-list");
+    // movieSearchBox.value = "";
+  }
+});
+loadMovies("lord of the Rings")
