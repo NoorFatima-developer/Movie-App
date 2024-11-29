@@ -117,7 +117,7 @@ img{
 
 }
 
-.search-item-thumbnail img {
+.search-list-item .search-thumb img {
     width: 40px;
     margin-right: 1rem;
 }
@@ -131,4 +131,20 @@ img{
 .search-item-info p {
     font-size: 0.8rem;
     margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.search-list::-webkit-scrollbar{
+    width: 8px;
+}
+
+.search-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.search-list::-webkit-scrollbar-thumb{
+    background-color: yellow !important;
+    outline: none;
+    border-radius: 10px;
 }
