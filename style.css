@@ -93,6 +93,7 @@ img{
     right: 0;
     top: 100%;
     max-width: 500px;
+    max-height: 500px;
     overflow-y: scroll;
     z-index: 10;
 }

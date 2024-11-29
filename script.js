@@ -52,10 +52,26 @@ function displayMovieList(movies){
                 </div>
                 <div class="search-item-info">
                     <h3>${movies[i].Title}</h3>
-                    <p>2017</p>
+                    <p>${movies[i].Year}</p>
                 </div>
                 `;
+                searchList.appendChild(movieListItem);
     }
+    loadMovieDetails();
+}
+
+function loadMovieDetails(){
+    const searchListMovies = searchList.querySelectorAll('.search-list-item');
+    searchListMovies.forEach(movie => {
+        movie.addEventListener('click', async () => {
+            // console.log(movie.dataset.id); 
+            searchList.classList.add('hide-search-list');
+            movieSearchBox.value = "";
+            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`)
+        });
+        // console.log(movie);
+        
+    });
 }
 
 // loadMovies("lord of the Rings")
